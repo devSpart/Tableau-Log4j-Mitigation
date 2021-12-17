@@ -1,7 +1,4 @@
-$temp_dir = Test-Path -Path 'C:\temp'
-if ($temp_dir -eq 'False') {
-    mkdir 'C:\temp'
-}
+mkdir 'C:\temp'
 
 Set-ItemProperty 'C:\Program Files\Tableau\Tableau*\bin\jdbcserver.jar' -Name IsReadOnly -Value $false
 Set-ItemProperty 'C:\Program Files\Tableau\Tableau*\bin\oauthservice.jar' -Name IsReadOnly -Value $false
